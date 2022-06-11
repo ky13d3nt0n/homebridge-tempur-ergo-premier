@@ -8,7 +8,7 @@ import config from './config';
 
 export class AccessorySocket {
   private readonly socket = DgramAsPromised.createSocket( 'udp4' );
-  private readonly port = config.port;
+  private readonly port = 50007;
 
   constructor(
     public readonly ip

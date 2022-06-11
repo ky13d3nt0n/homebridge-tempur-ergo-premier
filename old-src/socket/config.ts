@@ -2,12 +2,12 @@
  * @module Config
  * @description Our config file
  */
-
-// https://assets-www.tempurpedic.com/media/documents/TEMPUR-Ergo_Premier_WiFi_Reference_REV2.pdf
-// http://10.20.0.91/sys
-
 export default {
   port: 50007,
+  beds: {
+    kyle: '10.20.0.224',
+    trevor: '10.20.0.91'
+  },
   commands: {
     /**
      * Flat Position
@@ -28,12 +28,12 @@ export default {
     off: { title: 'Vibration Off', command: '3305320A9486000012' },
 
     /**
-     * Massage Setting #1 - #4
+     * Vibration Setting #1 - #4
      */
-    massage1: { title: 'Massage Setting 1', command: '33053203948D007861' },
-    massage2: { title: 'Massage Setting 2', command: '33053203948D017860' },
-    massage3: { title: 'Massage Setting 3', command: '33053203948D027863' },
-    massage4: { title: 'Massage Setting 4', command: '33053203948D037862' },
+    vibration1: { title: 'Vibration Setting 1', command: '33053203948D007861' },
+    vibration2: { title: 'Vibration Setting 2', command: '33053203948D017860' },
+    vibration3: { title: 'Vibration Setting 3', command: '33053203948D027863' },
+    vibration4: { title: 'Vibration Setting 4', command: '33053203948D037862' },
 
     /**
      * Lift
@@ -50,20 +50,20 @@ export default {
     },
 
     /**
-     * Vibration
+     * Lift
      */
-    vibration: {
+    massage: {
       head: {
-        up: { title: 'Increase Head Vibration', command: '' },
-        down: { title: 'Decrease Head Vibration', command: '' }
+        up: { title: 'Increase Head Massage', command: '' },
+        down: { title: 'Decrease Head Massage', command: '' }
       },
       lumbar: {
-        up: { title: 'Increase Lumbar Vibration', command: '' },
-        down: { title: 'Decrease Lumbar Vibration', command: '' }
+        up: { title: 'Increase Lumbar Massage', command: '' },
+        down: { title: 'Decrease Lumbar Massage', command: '' }
       },
       leg: {
-        up: { title: 'Increase Leg Vibration', command: '' },
-        down: { title: 'Decrease Leg Vibration', command: '' }
+        up: { title: 'Increase Leg Massage', command: '' },
+        down: { title: 'Decrease Leg Massage', command: '' }
       }
     }
   }
